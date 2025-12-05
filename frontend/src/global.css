@@ -1,0 +1,89 @@
+@tailwind components;
+
+@layer components {
+  .metric-card {
+    @apply rounded-2xl border p-4 shadow-sm backdrop-blur;
+  }
+
+  /* Tones used across dashboard metric cards */
+  .tone-blue {
+    @apply bg-blue-50 text-blue-900 border-blue-100 dark:bg-blue-500/10 dark:text-blue-100;
+  }
+
+  .tone-emerald {
+    @apply bg-emerald-50 text-emerald-900 border-emerald-100 dark:bg-emerald-500/10 dark:text-emerald-100;
+  }
+
+  .tone-amber {
+    @apply bg-amber-50 text-amber-900 border-amber-100 dark:bg-amber-500/10 dark:text-amber-100;
+  }
+
+  .tone-slate {
+    @apply bg-slate-50 text-slate-900 border-slate-100 dark:bg-slate-500/10 dark:text-slate-100;
+  }
+
+  /* Condition badges */
+  .condition-rain {
+    @apply bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-100;
+  }
+
+  .condition-sun {
+    @apply bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-100;
+  }
+
+  .condition-cloudy {
+    @apply bg-slate-200 text-slate-800 dark:bg-slate-800/60 dark:text-slate-100;
+  }
+
+  .condition-default {
+    @apply bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-100;
+  }
+
+  /* Insight chips */
+  .chip {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold shadow-sm;
+  }
+
+  .chip-info {
+    @apply chip bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-100;
+  }
+
+  .chip-warning {
+    @apply chip bg-amber-100 text-amber-900 dark:bg-amber-900/40 dark:text-amber-100;
+  }
+
+  .chip-critical {
+    @apply chip bg-rose-100 text-rose-900 dark:bg-rose-900/50 dark:text-rose-100;
+  }
+
+  .chip-positive {
+    @apply chip bg-emerald-100 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-100;
+  }
+
+  /* Temperature trend chart theming */
+  .temperature-chart {
+    --chart-axis-color: hsl(var(--muted-foreground));
+    --chart-grid-color: hsl(var(--border));
+    --chart-temperature-color: hsl(var(--chart-1));
+    --chart-trend-color: hsl(var(--chart-4));
+
+    color: var(--chart-axis-color);
+  }
+
+  .temperature-chart .recharts-cartesian-grid line {
+    stroke: var(--chart-grid-color);
+    stroke-dasharray: 4 4;
+  }
+
+  .temperature-chart .recharts-cartesian-axis line,
+  .temperature-chart .recharts-cartesian-axis tick tspan {
+    stroke: var(--chart-axis-color);
+    fill: var(--chart-axis-color);
+  }
+
+  .temperature-chart .recharts-legend-item-text {
+    @apply text-xs font-medium;
+    color: var(--chart-axis-color);
+  }
+
+}

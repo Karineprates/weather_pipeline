@@ -1,0 +1,8 @@
+<svg width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="28" stroke="hsl(var(--foreground))" stroke-width="3"/>
+  <path d="M20 38C20 32 24 28 30 28C31 22 36 18 42 20C48 22 51 28 49 34C54 35 56 40 54 44C52 48 48 50 44 50H26C22 50 20 46 20 42V38Z"
+        stroke="hsl(var(--foreground))" stroke-width="3" fill="none"/>
+  <path d="M26 44L26 34" stroke="hsl(var(--chart-1))" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 44L32 28" stroke="hsl(var(--chart-2))" stroke-width="4" stroke-linecap="round"/>
+  <path d="M38 44L38 36" stroke="hsl(var(--chart-3))" stroke-width="4" stroke-linecap="round"/>
+</svg>
