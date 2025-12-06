@@ -43,7 +43,6 @@ export class WeatherController {
     });
   }
 
-  // 🔥🔥🔥 IMPORTANTE: marque como pública
   @Get('insights')
   @Public()
   findInsights(@Query() query: FilterWeatherDto) {

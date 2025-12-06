@@ -211,7 +211,7 @@ export default function Dashboard() {
     [range]
   );
 
-  // CARREGA AMBOS AO INICIAR
+
   useEffect(() => {
     const bootstrap = async () => {
       await Promise.all([loadData(), loadInsights()]);
@@ -220,7 +220,7 @@ export default function Dashboard() {
     void bootstrap();
   }, [loadData, loadInsights]);
 
-  // ORDENAÇÃO
+
   const ordered = useMemo(
     () =>
       [...data].sort(
@@ -230,7 +230,7 @@ export default function Dashboard() {
     [data]
   );
 
-  // FORMATADO PRO GRÁFICO
+  // GRÁFICO
   const formatted = useMemo(() => {
     if (!ordered.length) return [];
 

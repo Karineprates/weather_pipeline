@@ -14,7 +14,7 @@ QUEUE_NAME = os.getenv("RABBITMQ_QUEUE", "weather_queue")
 CITY = os.getenv("CITY", "Florianópolis")
 LATITUDE = float(os.getenv("LATITUDE", "-27.5935"))
 LONGITUDE = float(os.getenv("LONGITUDE", "-48.55854"))
-INTERVAL = int(os.getenv("INTERVAL", "30"))
+INTERVAL = int(os.getenv("INTERVAL", "3600"))
 
 WEATHER_CODE_MAP = {
     0: "Céu limpo",
@@ -79,7 +79,6 @@ def get_weather_from_open_meteo():
     current = data.get("current", {})
     hourly_precip = data.get("hourly", {}).get("precipitation", [])
 
-    # Soma a precipitação das últimas 24h para um valor acumulado mais útil
     accumulated_precipitation = round(sum(hourly_precip[-24:]), 2)
 
     payload = {
