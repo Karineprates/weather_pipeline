@@ -6,8 +6,8 @@ Cidade monitorada: Florianópolis – SC
 <p align="left"> <img src="https://img.shields.io/badge/Python-Producer-blue?logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Go-Worker-00ADD8?logo=go&logoColor=white" /> <img src="https://img.shields.io/badge/NestJS-API-E0234E?logo=nestjs&logoColor=white" /> <img src="https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black" /> <img src="https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/RabbitMQ-Broker-FF6600?logo=rabbitmq&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Open--Meteo-Weather%20API-blue" /> <img src="https://img.shields.io/badge/Status-Completed-brightgreen" /> </p>
 
 <p align="center">
-  <img src="https://i.imgur.com/EaF7Smm.png" alt="Dashboard meteorológico" width="49%" />
-  <img src="https://i.imgur.com/eH76Fx6.png" alt="Gráficos de temperatura, umidade e vento" width="49%" />
+   <img src="assets/dashboard1.png" width="49%" />
+  <img src="assets/dashboard2.png" width="49%" />
 </p>
 
 ## Introdução
