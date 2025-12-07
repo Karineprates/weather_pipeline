@@ -14,7 +14,7 @@ QUEUE_NAME = os.getenv("RABBITMQ_QUEUE", "weather_queue")
 CITY = os.getenv("CITY", "Florianópolis")
 LATITUDE = float(os.getenv("LATITUDE", "-27.5935"))
 LONGITUDE = float(os.getenv("LONGITUDE", "-48.55854"))
-INTERVAL = int(os.getenv("INTERVAL", "3600"))
+INTERVAL = int(os.getenv("INTERVAL", "3600"))  # em segundos
 
 WEATHER_CODE_MAP = {
     0: "Céu limpo",
