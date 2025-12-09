@@ -82,3 +82,13 @@
   --chart-4: 260 70% 65%;
   --chart-5: 350 75% 60%;
 }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
